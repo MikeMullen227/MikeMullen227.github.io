@@ -44,7 +44,13 @@ body {
 
 .navbar-dark .navbar-toggler { border-color: #fff; }
 
+.logo-blue-big {display: none;}
 .logo-black { display: none; }
+.logo-blue {display: none; }
+
+.white-blue img:last-child{display:none}
+.white-blue:hover img:first-child{display:none}
+.white-blue:hover img:last-child{display:inline-block}
 
 /* --- fixed navigation --- */
 
@@ -54,14 +60,16 @@ body {
     padding: 0;
 }
 
-.fixed-top .navbar-nav a:hover,
-.fixed-top .navbar-nav a:active {
-    color: #007bff;   
-}   
 
 .fixed-top .logo { display: none; }
 
-.fixed-top .logo-black { display: block; }
+.fixed-top .logo-black { display: inline-block; }
+
+//* small black logo changes to blue on hover */
+
+.black-blue img:last-child{display:none}
+.black-blue:hover img:first-child{display:none}
+.black-blue:hover img:last-child{display:inline-block}
 
 .fixed-top .navbar-brand { margin-right: 0; }
 
