@@ -1,3 +1,14 @@
+
+/* --- global --- */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #fff;
@@ -135,11 +146,42 @@ body {
     padding-top: 7px;
 }
 
+
+@media (max-width: 992px) {
+    
+    #skills {
+        min-height: 1000px;
+    }
+    .skills-row {
+        padding: 10px;
+    }
+}
+
+
+
 /* -- portfolio section -- */
 
 #portfolio {
-    min-height: 1600px;
+    min-height: 1250px;
 }
+
+.portfolio-row {
+    margin: 4em;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 992px) {
+    
+    #portfolio {
+        min-height: 1000px;
+    }
+    
+}
+
 
 /* -- contact section -- */
 
