@@ -79,6 +79,12 @@ body {
 
 }
 
+/* --- navigation for mobile -- */
+
+button.navbar-toggler {
+    margin: 1em;
+}
+
 /* --- about --- */
 
 #home-section {
@@ -174,7 +180,7 @@ body {
 }
 
 .portfolio-row {
-    margin: 4em;
+    padding: 4em;
 }
 .img-fluid {
     max-width: 100%;
@@ -188,8 +194,17 @@ body {
         min-height: 1000px;
     }
     
+    .portfolio-row {
+        margin: 0;
+    }
+    
+    .portfolio-row img {
+        padding: 2em 0;
+        
+    }
 }
 
+@media (max-width: )
 
 /* -- contact section -- */
 
