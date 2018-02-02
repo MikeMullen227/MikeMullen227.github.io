@@ -1,11 +1,12 @@
-
 /* --- global --- */
 
 html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -18,11 +19,11 @@ body {
 /* --- main navigation --- */
 
 .navbar {
-  font-size: 1.3em; 
-  padding: 10px 0;
-  font-size: 15px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+    font-size: 1.3em;
+    padding: 10px 0;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .nav-link {
@@ -35,22 +36,43 @@ body {
     color: #fff;
 }
 
- .navbar-nav a:hover,
- .navbar-nav a:active {
-    color: #007bff !important;   
+.navbar-nav a:hover,
+.navbar-nav a:active,
+ {
+    color: #007bff !important;
     border-bottom: 2px solid #007bff;
-    
-}    
 
-.navbar-dark .navbar-toggler { border-color: #fff; }
+}
 
-.logo-blue-big {display: none;}
-.logo-black { display: none; }
-.logo-blue {display: none; }
+.navbar-dark .navbar-toggler {
+    border-color: #fff;
+}
 
-.white-blue img:last-child{display:none}
-.white-blue:hover img:first-child{display:none}
-.white-blue:hover img:last-child{display:inline-block}
+.logo-blue-big {
+    display: none;
+}
+
+.logo-black {
+    display: none;
+}
+
+.logo-blue {
+    display: none;
+}
+
+.white-blue img:last-child {
+    display: none
+}
+
+.white-blue:hover img:first-child,
+.white-blue:active img:first-child {
+    display: none
+}
+
+.white-blue:hover img:last-child,
+.white-blue:active img:last-child {
+    display: inline-block
+}
 
 /* --- fixed navigation --- */
 
@@ -61,20 +83,35 @@ body {
 }
 
 
-.fixed-top .logo { display: none; }
+.fixed-top .logo {
+    display: none;
+}
 
-.fixed-top .logo-black { display: inline-block; }
+.fixed-top .logo-black {
+    display: inline-block;
+}
 
 //* small black logo changes to blue on hover */
+.black-blue img:last-child {
+    display: none
+}
 
-.black-blue img:last-child{display:none}
-.black-blue:hover img:first-child{display:none}
-.black-blue:hover img:last-child{display:inline-block}
+.black-blue:hover img:first-child,
+.black-blue:active img:first-child {
+    display: none
+}
 
-.fixed-top .navbar-brand { margin-right: 0; }
+.black-blue:hover img:last-child,
+.black-blue:active img:last-child {
+    display: inline-block
+}
 
-.fixed-top .nav-link { 
-    color: black; 
+.fixed-top .navbar-brand {
+    margin-right: 0;
+}
+
+.fixed-top .nav-link {
+    color: black;
     padding-bottom: 12px;
 
 }
@@ -88,44 +125,46 @@ button.navbar-toggler {
 /* --- about --- */
 
 #home-section {
-  background-image: url("http://www.desicomments.com/wp-content/uploads/2017/04/Beautiful-Photo-Of-Stars.jpg") ;
-  background-size: cover;  
-  min-height: 825px;
-  background-attachment: fixed;
+    background-image: url("http://www.desicomments.com/wp-content/uploads/2017/04/Beautiful-Photo-Of-Stars.jpg");
+    background-size: cover;
+    min-height: 825px;
+    background-attachment: fixed;
 }
 
 
 .headshot {
-  border-radius: 50%;
-  width: 250px;
-  height: 250px;
-  display: block;
-  margin: 100px auto 40px;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 100px auto 40px;
 }
 
 .name {
-  font-size: 3.0em;
-  color: white;
-  margin: 0;
+    font-size: 3.0em;
+    color: white;
+    margin: 0;
 }
 
 .title {
-  font-size: 2.0em;
-  color: white;
-  margin-bottom: 40px;   
-}    
+    font-size: 2.0em;
+    color: white;
+    margin-bottom: 40px;
+}
 
 
 /* -- social buttons -- */
 
 .btn-default {
-  font-size: 1.3em;
-  margin: 5px;
-  color: #fff;
-  padding: 5px;
+    font-size: 1.3em;
+    margin: 5px;
+    color: #fff;
+    padding: 5px;
 }
 
-.fa { padding: 3px; }
+.fa {
+    padding: 3px;
+}
 
 
 .social {
@@ -140,6 +179,7 @@ button.navbar-toggler {
 .freeCodeCamp {
     background-color: green;
 }
+
 .github {
     background-color: black;
 }
@@ -153,7 +193,7 @@ button.navbar-toggler {
 }
 
 .skills-row {
-   padding: 50px; 
+    padding: 50px;
 }
 
 #js-icon {
@@ -162,7 +202,7 @@ button.navbar-toggler {
 
 
 @media (max-width: 992px) {
-    
+
     #skills {
         min-height: 1000px;
     }
@@ -182,6 +222,7 @@ button.navbar-toggler {
 .portfolio-row {
     padding: 4em;
 }
+
 .img-fluid {
     max-width: 100%;
     height: auto;
@@ -189,22 +230,21 @@ button.navbar-toggler {
 
 
 @media (max-width: 992px) {
-    
+
     #portfolio {
         min-height: 1000px;
     }
-    
+
     .portfolio-row {
         margin: 0;
     }
-    
+
     .portfolio-row img {
         padding: 2em 0;
-        
+
     }
 }
 
-@media (max-width: )
 
 /* -- contact section -- */
 
@@ -221,12 +261,19 @@ hr {
     border: 0;
     border-top: 1px solid #fff;
     margin: 1em 0;
-    padding: 0; 
+    padding: 0;
 }
 
 
 .summary {
-  font-size: 1.5em;
-  color: #fff;
-    
+    font-size: 1.5em;
+    color: #fff;
+
+}
+
+@media (max-width: 767px) {
+    .copyright {
+        padding: 2em;
+    }
+
 }

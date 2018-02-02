@@ -14,9 +14,11 @@ $(document).ready(function() {
     $('.js--section-skills').waypoint(function(direction) {
         if(direction == 'down') {
             $('nav').addClass('fixed-top'); 
+            $('nav').addClass('navbar-light'); 
             $('nav').removeClass('navbar-dark');
         } else {
             $('nav').removeClass('fixed-top');
+            $('nav').removeClass('navbar-light');
             $('nav').addClass('navbar-dark');
         }
     }, {
