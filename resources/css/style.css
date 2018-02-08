@@ -125,6 +125,16 @@ body {
 
 /* --- navigation for mobile -- */
 
+@media (max-width: 576px) {
+
+    img.logo-black, img.logo-blue {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+}
+
+
 button.navbar-toggler {
     margin: 1em;
 }
@@ -227,7 +237,7 @@ button.navbar-toggler {
 }
 
 .portfolio-row {
-    padding: 4em;
+    margin: 4em;
 }
 
 .img-fluid {
